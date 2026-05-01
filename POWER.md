@@ -1,12 +1,12 @@
 ---
 name: "ladybug-memory"
-displayName: "Ladybug Memory"
-description: "Persistent graph memory for AI agents using LadybugDB. Stores learnings, decisions, and preferences with semantic search, auto-dedup, and graph relationships between memories."
+displayName: "Ladybug Memory — Persistent Agent Memory"
+description: "Give your Kiro agent a brain that remembers. Persistent graph memory powered by LadybugDB with semantic search, auto-dedup, and graph relationships between memories."
 keywords: ["memory", "agent-memory", "persistent", "graph", "ladybugdb", "semantic-search", "recall", "learning"]
 author: "arunkse"
 ---
 
-# Ladybug Memory
+# 🪲 Ladybug Memory
 
 ## Overview
 
