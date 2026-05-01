@@ -49,7 +49,7 @@ On first activation, do the following:
    - name: `Persist Learnings to Memory`
    - eventType: `agentStop`
    - hookAction: `askAgent`
-   - outputPrompt: `Review this conversation for any new learnings, user preferences, decisions, or patterns worth remembering. For each one, call the memory_store tool with appropriate content, category (learning/preference/decision/pattern), tags, and importance (1-5). Skip anything trivial or already stored. Be selective — only store things that would be useful in future conversations.`
+   - outputPrompt: `Review this conversation for any new learnings, user preferences, decisions, or patterns worth remembering. For each one, call the memory_store tool with appropriate content, category (learning/preference/decision/pattern), tags, and importance (1-5). Skip anything trivial or already stored. Be selective — only store things that would be useful in future conversations. If nothing worth storing, just say "No memories to store." — no explanation needed.`
 
    **Hook 2: Recall Context**
    - id: `recall-memory`
@@ -165,7 +165,7 @@ Automatically extracts and stores learnings after every task:
   "when": { "type": "agentStop" },
   "then": {
     "type": "askAgent",
-    "prompt": "Review this conversation for any new learnings, user preferences, decisions, or patterns worth remembering. For each one, call the memory_store tool with appropriate content, category (learning/preference/decision/pattern), tags, and importance (1-5). Skip anything trivial or already stored. Be selective — only store things that would be useful in future conversations."
+    "prompt": "Review this conversation for any new learnings, user preferences, decisions, or patterns worth remembering. For each one, call the memory_store tool with appropriate content, category (learning/preference/decision/pattern), tags, and importance (1-5). Skip anything trivial or already stored. Be selective — only store things that would be useful in future conversations. If nothing worth storing, just say \"No memories to store.\" — no explanation needed."
   }
 }
 ```
